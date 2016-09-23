@@ -1,0 +1,22 @@
+@import '../utils/variables';
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+button {
+  background: $blue;
+  color: white;
+  border-color: white;
+  &:hover {
+    background: white;
+    color: $blue;
+    border-color: $blue;
+  }
+}

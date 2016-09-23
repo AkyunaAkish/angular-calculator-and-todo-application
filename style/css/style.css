@@ -1,0 +1,1 @@
+*,*:before,*:after{box-sizing:border-box}body{background:black;color:white;text-align:center}button{background:#39A0ED;color:white;border-color:white}button:hover{background:white;color:#39A0ED;border-color:#39A0ED}input{color:#39A0ED}select{color:#39A0ED}textarea{color:#39A0ED;resize:none}.todoContainer h4,.todoContainer button{display:inline}.todoContainer h4{margin-right:5px}

@@ -1,9 +1,19 @@
 <div>
   <a ui-sref="math">
-    <button>Math</button>
+    <button>Calculator</button>
   </a>
 </div>
 
-<div>
-  {{message}}
+<div class='todoContainer'>
+  <h1>Todos</h1>
+  <div>
+    <textarea ng-model='todo' id="" cols="30" rows="10"></textarea>
+  </div>
+  <div>
+    <button ng-click='addTodo()'>Add Todo</button>
+  </div>
+  <div ng-repeat='todo in todos track by $index' class='todoContainer'>
+    <h4 ng-bind='todo.todo'></h4>
+    <button ng-click='deleteTodo(todo)'>DELETE</button>
+  </div>
 </div>

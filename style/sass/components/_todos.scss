@@ -1,0 +1,15 @@
+@import '../utils/variables';
+
+textarea {
+  color: $blue;
+  resize: none;
+}
+
+.todoContainer {
+  h4, button {
+    display: inline;
+  }
+  h4 {
+    margin-right: 5px;
+  }
+}
