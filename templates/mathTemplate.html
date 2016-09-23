@@ -1,0 +1,29 @@
+<div>
+  <a ui-sref="todos">
+    <button>Todos</button>
+  </a>
+</div>
+
+<div>
+  <h1>Numbers to calculate</h1>
+  <input type="number" ng-model='numberOne'>
+  <input type="number" ng-model='numberTwo'>
+</div>
+
+<div>
+  <h1>In which way to calculate the numbers</h1>
+  <select ng-model='operator'>
+    <option value="*">Multiply</option>
+    <option value="/">Divide</option>
+    <option value="-">Subtract</option>
+    <option value="+">Add</option>
+  </select>
+</div>
+
+<div>
+  <button ng-click='calculate()'>Calculate!</button>
+</div>
+
+<div ng-if='answer'>
+  <h1>Answer: {{answer}}</h1>
+</div>
